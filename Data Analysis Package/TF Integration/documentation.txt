@@ -1,0 +1,24 @@
+
+						Instructions for IntegrateFromDataVault
+------------------------|-------------------------------------------------------------------------------------------------------
+Name:			| IntegrateFromDataVault.m
+------------------------|-------------------------------------------------------------------------------------------------------
+Type: 			| Matlab script
+------------------------|-------------------------------------------------------------------------------------------------------
+Package Required: 	| image_toolbox
+------------------------|-------------------------------------------------------------------------------------------------------
+Description:		| IntegrateFromDataVault is a test script for integrating takes Tuning Fork Calibration data files from
+			| Data Vault and integrate the AC measurement result from Tuning Fork Fitting and Error tool kit. 
+			| It rotates the X and Y Quadrature of AC tuning fork measurements and integrate the rotated image along
+			| specified angle and amplitude. Once running, the user needs to manually choose TFX and TFY data from the
+			| drop down menu and if you do not want to rotate, select "cancel" when prompt to choose TFX data. The 
+			| user is also asked to choose along which edges are the signals constant. The output image will be masked
+			| according to this choice.
+------------------------|-------------------------------------------------------------------------------------------------------
+Syntax:			| IntegrateFromDataVault
+------------------------|-------------------------------------------------------------------------------------------------------
+Input Arguments:	| See Notes on the scripts
+------------------------|-------------------------------------------------------------------------------------------------------
+Outputs:		| 7 pcolor plots (Y Quadrature Before Phase Rotation, X Quadrature Before Phase Rotation, Rotated TF Data
+			| Before Integration, Residual after rotation, Image after Integration, DC measurement data from Data_Vault,
+			| Residual after Integration. 

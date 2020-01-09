@@ -1,0 +1,20 @@
+
+							Instructions for newgimmeB
+------------------------|-------------------------------------------------------------------------------------------------------
+Name:			| newgimmeB
+------------------------|-------------------------------------------------------------------------------------------------------
+Type: 			| Matlab function
+------------------------|-------------------------------------------------------------------------------------------------------
+Package Required: 	| None
+------------------------|-------------------------------------------------------------------------------------------------------
+Description:		| newgimmeB Calculates magnetic field above a uniformly magnetized 2D heterostructure. This function 
+			| calculates the magnetic field in the region above a 2D heterostructure. It uses Fast Fourier Transformation 
+			| to quickly calculate the magnetic field.
+------------------------|-------------------------------------------------------------------------------------------------------
+Syntax:			| [Bfield] = newgimmeB(moments, inter_pixel_distance, d)
+------------------------|-------------------------------------------------------------------------------------------------------
+Input Arguments:	| Moments -- Magnetization density in SI in unit (Ampere)
+			| inter_pixel_distance -- distances between each magnetic moments (only uniform aspect ratio allowed) (m)
+			| d -- distance from the surface to be calculated (m)
+------------------------|-------------------------------------------------------------------------------------------------------
+Outputs:		| Bfield -- Matrix of Magnetic Field (T)

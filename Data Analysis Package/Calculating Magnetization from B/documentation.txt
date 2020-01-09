@@ -1,0 +1,45 @@
+
+						Instructions for NewMomentCalculator
+------------------------|-------------------------------------------------------------------------------------------------------
+Name:			| NewMomentCalculator.m
+------------------------|-------------------------------------------------------------------------------------------------------
+Type: 			| Matlab function
+------------------------|-------------------------------------------------------------------------------------------------------
+Package Required: 	| None
+------------------------|-------------------------------------------------------------------------------------------------------
+Description:		| NewMomentCalculator Calculates magnetization above 2D heterostructure with given magnetic field 
+			| landscape. It uses Fast Fourier Transformation to make rapid calculation of magnetization from 2D
+			| magnetic field map and apply a low pass filter on the magnetic field landscape to get rid of high 
+			| frequency noise.
+------------------------|-------------------------------------------------------------------------------------------------------
+Syntax:			| [Magnetization] = NewMomentCalculator(BfieldX, BfieldY, Bfield, height)
+------------------------|-------------------------------------------------------------------------------------------------------
+Input Arguments:	| Magnetization -- Matrix of Magnetization landscape in SI unit (Ampere)
+------------------------|-------------------------------------------------------------------------------------------------------
+Outputs:		| BfieldX -- Matrix of X coordinates (in the same form as pcolor input) (m)
+			| BfieldY -- Matrix of Y coordinates (in the same form as pcolor input) (m)
+			| Bfield -- Matrix of magnetic field (Tesla)
+			| height -- distance of sensor from the surface when conducting field measurement (m)
+
+
+
+						Instructions for NewMomentCalculatorWithPadding
+------------------------|-------------------------------------------------------------------------------------------------------
+Name:			| NewMomentCalculatorWithPadding.m
+------------------------|-------------------------------------------------------------------------------------------------------
+Type: 			| Matlab function
+------------------------|-------------------------------------------------------------------------------------------------------
+Package Required: 	|
+------------------------|-------------------------------------------------------------------------------------------------------
+Description:		| NewMomentCalculatorWithPadding is an improved version of NewMomentCalculator. It has the additional 
+			| feature of automatically zero padding the edges of original B field signal before calculation and 
+			| return the magnetization map at original size.
+------------------------|-------------------------------------------------------------------------------------------------------
+Syntax:			| [Magnetization] = NewMomentCalculatorWithPadding(BfieldX, BfieldY, Bfield, height)
+------------------------|-------------------------------------------------------------------------------------------------------
+Input Arguments:	| Magnetization -- Matrix of Magnetization landscape in SI unit (Ampere)
+------------------------|-------------------------------------------------------------------------------------------------------
+Outputs:		| BfieldX -- Matrix of X coordinates (in the same form as pcolor input) (m)
+			| BfieldY -- Matrix of Y coordinates (in the same form as pcolor input) (m)
+			| Bfield -- Matrix of magnetic field (Tesla)
+			| height -- distance of sensor from the surface when conducting field measurement (m)
