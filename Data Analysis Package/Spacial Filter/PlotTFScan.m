@@ -38,7 +38,7 @@ if isa(data_num,'double')
     H = H./sum(sum(H));
     z = filter2(H,z);
     %z = z- mean(mean(z(3:53, 86:96)));
-    z = z- mean(mean555(z));
+    z = z- mean(mean(z));
     
     x = x(50:end-50,2:end-1);
     y = y(50:end-50,2:end-1);
