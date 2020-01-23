@@ -7,7 +7,7 @@
 5. Go to Folder_Path.txt and enter the location of the entire folder
 6. Run AddFolderToPath.m in order to add the folder and all its subfolder to Matlab path
 7. The Tunin Fork Fitting and Error function is run in python, texted on Python 2.7.16
-8. All Matlab Functions are written and tested on Matlab R2019a
+8. All Matlab Functions are written and tested on Matlab R2019a. Matlab versions earlier than R2015a are not supported
 9. Until 11/27/2019, the Data Analysis Package contains:
 
 *The following chart contains descriptions and required Matlab packages for all functions in "function" folder. The instructions for
