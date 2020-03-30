@@ -21,10 +21,10 @@ switch Pad_Or_Not
         
         
         for m = 1:cols
-            kx(1 : rows, m) = (m - 1 - cols / 2) * dkx / (cols - 1);
+            kx(1 : rows, m) = (m - 1 - cols / 2) * dkx / cols;
         end
         for n = 1:rows
-            ky(n, 1 : cols) = (n - 1 - rows / 2) * dky / (rows - 1);
+            ky(n, 1 : cols) = (n - 1 - rows / 2) * dky / rows;
         end
         
         
@@ -72,10 +72,10 @@ switch Pad_Or_Not
         
         
         for m = 1:cols
-            kx(1 : rows, m) = (m - 1 - cols / 2) * dkx / (cols - 1);
+            kx(1 : rows, m) = (m - 1 - cols / 2) * dkx / cols;
         end
         for n = 1:rows
-            ky(n, 1 : cols) = (n - 1 - rows / 2) * dky / (rows - 1);
+            ky(n, 1 : cols) = (n - 1 - rows / 2) * dky / rows;
         end
         
         
